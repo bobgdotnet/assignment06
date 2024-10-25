@@ -1,4 +1,4 @@
-// I got it down to one line by using a "," and skipping the [.target.elements] because its just one form with everything already in it.
+// I got it down to one line by using a "," 
 window.onload = () => empForm.onsubmit = e => (e.preventDefault(), [...e].forEach(element => element.id && console.log(`${element.id}: ${element.value}`)));
 //load data from the form     when submit is pressed, skip default, then  go through the array and log the data/value pair.
 
